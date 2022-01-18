@@ -1,3 +1,10 @@
+@font-face {
+	font-family: "best";
+	font-style: normal;
+	src: url('fonts/best.otf');
+}
+
+
 body{
   text-align:center;
   background-color: hsl(22, 94%, 74%);
@@ -5,21 +12,26 @@ body{
 
 }
 
+
+
 h1{
+  font-family: 'Mochiy Pop P One', sans-serif;
   font-size:3rem;
   margin-top:45vh;
   color:white;
-  font-family: 'Merienda', cursive;
+  /* font-family: 'Merienda', cursive; */
   animation-name:glow;
   animation-duration:1s;
   animation-iteration-count:infinite;
   animation-direction:alternate;
 }
   
-  @keyframes glow{
-    from{text-shadow:0px 0px 5px #fff,0px 0px 5px #614ad3;}
-    to{text-shadow:0px 0px 20px #fff,0px 0px 20px #614ad3;}
-  }
+@keyframes glow{
+  from{text-shadow:0px 0px 5px #fff,0px 0px 5px #614ad3;}
+  to{text-shadow:0px 0px 20px #fff,0px 0px 20px #614ad3;}
+}
+
+
 
 
 
@@ -85,3 +97,80 @@ h1{
    /*FIN CSS DU MENU*/
 
 
+
+
+
+/* footer */
+.footer_dubas {
+  text-align: center;
+}
+
+
+/* je selectionne les <p> qui sont dans la balise de class "footer_dubas" */
+.footer_dubas p{
+  font-style: italic;
+
+
+  font-size: 10px;
+}
+
+
+/* je selectionne les <img> qui sont dans la balise de class "footer_dubas" */
+.footer_dubas img{
+  width: 10%;
+}
+
+/* fin footer */
+
+
+
+
+
+
+
+
+
+
+
+   html {
+    /* background: #000; */
+    margin: 0;
+  }
+  .navbar {
+    
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background: #10327e;
+    height: 34px;
+    width: auto;
+    border-radius: 14px 14px 14px 14px;
+    border-bottom: 1px solid rgba(255,0,0,0.6);
+    position: relative;
+    font-size: 25px;
+  }
+  .fa-home, .fa-cogs, .fa-opencart, .fa-wrench, .fa-info, .fa-star, .fa-list, .fa-clipboard {
+    color: #fff;
+    float: left;
+    margin: 5px 20px;
+  }
+  .fa-home:hover, .fa-cogs:hover, .fa-opencart:hover, .fa-wrench:hover, .fa-info:hover, .fa-star:hover, .fa-list:hover, .fa-clipboard:hover
+  {
+    color: #ff0000;
+    transition: 0.5s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); 
+    animation: bounce 1s infinite;
+  }
+  .fa-home:hover:after {
+    color: #ff00ff;
+    transition: 0.5s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
