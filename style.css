@@ -16,10 +16,8 @@ body{
 
 h1{
   font-family: 'Mochiy Pop P One', sans-serif;
-  font-size:3rem;
-  margin-top:45vh;
-  color:white;
-  /* font-family: 'Merienda', cursive; */
+  font-size:3rem;  
+  color:white;  
   animation-name:glow;
   animation-duration:1s;
   animation-iteration-count:infinite;
